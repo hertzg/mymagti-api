@@ -3,7 +3,20 @@ export const DEFAULT_BASE_URL = "https://oauth.magticom.ge/auth/";
 export const DEFAULT_USER_AGENT =
   "MyMagti/11.9.96 (Magticom.MyMagti; build:1; iOS 18.1.0) Alamofire/5.9.1";
 
-export const DEFAULTS = Object.seal({
+export const DEFAULTS: {
+  login: {
+    url: string;
+    grantType: string;
+    clientId: string;
+    authorization: string;
+  };
+  refresh: {
+    url: string;
+    grantType: string;
+    clientId: string;
+    authorization: string;
+  };
+} = Object.seal({
   login: {
     url: "oauth/token",
     grantType: "mymagti_auth",

@@ -69,12 +69,12 @@ async function fetchOauth(
 
 async function oauthGrant(
   type: keyof typeof DEFAULTS,
-  formdata: Record<string, string | Blob>,
+  formdata: Record<string, string>,
   options: FetchOauthOptions = {}
 ) {
   const { url, grantType, clientId } = DEFAULTS[type];
 
-  const body = new FormData();
+  const body = new URLSearchParams();
   body.append("client_id", clientId);
   body.append("grant_type", grantType);
   for (const [key, val] of Object.entries(formdata)) {

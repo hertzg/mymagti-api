@@ -63,7 +63,7 @@ describe("oauth", () => {
 
     assertSpyCalls(fetchStub, 1);
 
-    const expectedPayload = new FormData();
+    const expectedPayload = new URLSearchParams();
     expectedPayload.append("client_id", DEFAULTS.login.clientId);
     expectedPayload.append("grant_type", DEFAULTS.login.grantType);
     expectedPayload.append("username", FAKE_USERNAME);

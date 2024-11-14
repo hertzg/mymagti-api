@@ -27,8 +27,9 @@ export const DEFAULTS: {
   refresh: {
     url: "oauth/token",
     grantType: "refresh_token",
-    clientId: "MymagtiAppNew",
-    authorization: "Basic TXltYWd0aUFwcE5ldzpQaXRhbG9AI2RkZWVyYWFzYXNERjIxMyQl",
+    clientId: "MymagtiApp2FAPre",
+    authorization:
+      "Basic TXltYWd0aUFwcDJGQVByZTpQaXRhbG9AI2RkZWVyYWFzYXNERjIxMyQl",
   },
 });
 

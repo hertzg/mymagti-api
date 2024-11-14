@@ -1,0 +1,13 @@
+{
+  "name": "mymagti-api",
+  "version": "0.1.0",
+  "exports": "./mod.ts",
+  "tasks": {
+    "dev": "deno test --watch mod.ts"
+  },
+  "license": "MIT",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1",
+    "@std/testing": "jsr:@std/testing@^1.0.5"
+  }
+}
